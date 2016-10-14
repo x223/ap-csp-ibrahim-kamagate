@@ -6,15 +6,30 @@ function setup() {
 function draw() {
   background('white');
   text(mouseX + "," + mouseY,10,10);
+  fill('black')
+  rect(165,220,20,1000);
   fill('grey');
   rect(149,94,50,130);
   fill('white')
-  //ellipse();
-  //ellipse();
-  //ellipse();
-  if(mouseX < windowHeight) {
-  ellipse(175,150,30,30);
-  ellipse();
-  ellipse();
-  }
+  if (mouseX < 1 * windowWidth /3) {
+  fill('white');
+  ellipse(175,120,30,30);
+  ellipse(175,160,30,30);
+  fill('green');
+  ellipse(175,200,30,30);
+   } else if (mouseX < 2 * windowWidth /3) {
+  fill('white');
+  ellipse(175,120,30,30);
+  fill('yellow')
+  ellipse(175,160,30,30);
+  fill('white');
+  ellipse(175,200,30,30);
+  } else if (mouseX < windowWidth ) {
+  fill('red');
+  ellipse(175,120,30,30);
+  fill('white');
+  ellipse(175,160,30,30);
+  ellipse(175,200,30,30);
+}
+  
 }
