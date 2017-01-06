@@ -1,0 +1,17 @@
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+
+}
+
+function draw() {
+ text("⭐️",150,90);
+ text("⭐️",200,80);
+ text("⭐️",mouseX,mouseY);
+ text("⭐️",200,130);
+ fill('red')
+ rect(100,100,240,50);
+ fill('yellow')
+ rect(100,150,240,50);
+ fill('red')
+ rect(100,200,240,50);
+}
